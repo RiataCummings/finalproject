@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout page for Under the Swell when ordering a tooled leather knife sheath.">
+    <title>Under the Swell - Checkout</title>
+    <link rel="stylesheet" href="/css/checkoutpage.css">
+    <link rel="stylesheet" href="/css/responsive_checkout.css" media="screen and (max-width: 900px)">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img id="headerimage" src="/images/checkoutheader.JPG" alt="Sunset on the Swell" />
+        </div>
+
+        <div class="topmenu">
+            <ul class="navmenu">
+                <li><a href="/HTML/homepage.html">Home</a></li>
+                <li><a href="/HTML/Aboutpage.html">About</a></li>
+                <li><a href="/HTML/productspage.html">The Goods</a></li>
+                <li><a href="/HTML/portfoliopage.html">What We've Done</a></li>
+                <li><a href="/HTML/orderpage.html">Place an Order</a></li>
+            </ul>
+        </div>
+        <div id="maincontent">
+            <div id="column1">
+                <div class="gallery">        
+                        <img src="/images/customknifesheath.JPG" alt="Tooled leather knife sheath">
+                    <div class="desc">Tooled leather knife sheath for use on a belt.<br>$60<br></div>
+                </div>
+
+            </div>
+            <form name="LeatherOrder" method="post" action="https://elearn.usu.edu/courses/itls-5265/forms/form_results.php">
+
+                <div class="row">
+                    <div id="column2">
+                        <div class="address">
+                            <div class="personalinfo">
+                                <h3>Billing Address</h3>
+                                <label for="fname">Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                                <label for="adr"> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="42 Wallaby Way">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Sydney">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="NY">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="column3">
+                        <div class=paymentinfo>
+                            <h3>Payment</h3>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <a href="#"><img src="/images/TwitterLogo.png" alt="Twitter Logo"></a>
+            <a href="#"><img src="/images/InstaLogo.jpg" alt="Instagram Logo"></a>
+            <a href="#"><img src="/images/FBLogo.jpg" alt="Facebook Logo"></a>
+        </div>
+    </div>
+</body>
+
+</html>
